@@ -1,0 +1,52 @@
+INFS 611 FINAL PROJECT - Sensor Scan Application
+
+A comprehensive mobile application designed to detect falls using smartphone sensors. The app leverages the Accelerometer, Gyroscope, Magnetometer, and GPS to monitor user activity and trigger alerts when a fall is detected. The application also allows users to manually trigger an emergency alert with a button click.
+
+
+Project done by - Sandeep Rajendiran
+                - Tejeswar Sadanandan
+                - Nikshipta Koya
+                - Sunayana Inturu
+
+Features
+	•	Fall Detection:
+	•	Uses sensor data to detect sudden movements characteristic of a fall.
+	•	Sends an emergency alert with the user’s current location if a fall is detected.
+	•	Emergency SOS:
+	•	Allows users to manually trigger an SOS alert with a single button click.
+	•	Sensor Integration:
+	•	Reads data from the following sensors:
+	•	Accelerometer: Measures motion and tilt.
+	•	Gyroscope: Tracks angular velocity for orientation.
+	•	Magnetometer: Provides compass functionality.
+	•	GPS: Fetches the user’s location for alerts.
+	•	Customizable Contacts:
+	•	Users can add, edit, or remove emergency contacts.
+	•	Alerts are sent to predefined contacts with a personalized message.
+	•	User-Friendly Interface:
+	•	Real-time display of sensor data.
+	•	Visual indicators for compass and device orientation.
+
+How It Works
+	1.	The app continuously monitors accelerometer and gyroscope data.
+	2.	When a fall-like event is detected:
+	    •	The app sends an SOS alert to emergency contacts, including:
+	    •	The user’s location (latitude and longitude).
+	    •	Sensor readings during the fall.
+	3.	Users can also manually send an alert by pressing the SOS button.
+
+Technologies Used
+	•	Flutter: Front-end framework for building the app.
+	•	Sensors Plus: Library for accessing accelerometer, gyroscope, and magnetometer data.
+	•	Geolocator: Library for GPS location tracking.
+	•	Permission Handler: For managing runtime permissions.
+	•	Map Launcher: To open map applications for location visualization.
+
+Usage
+	•	Set Up Emergency Contacts:
+	•	Open the app and add emergency contacts.
+	•	Customize the alert message as needed.
+	•	Test Fall Detection:
+	•	Simulate a fall-like movement to trigger the detection mechanism.
+	•	Manual SOS:
+	•	Press the SOS button to immediately send alerts to contacts.
